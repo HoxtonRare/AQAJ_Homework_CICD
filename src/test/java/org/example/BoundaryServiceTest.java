@@ -27,4 +27,9 @@ class BoundaryServiceTest {
     void testSearchForMinMark(int[] marks, int exp) {
         assertEquals(exp, boundaryService.findMin(marks));
     }
+
+    @Test
+    void failedTest(){
+        fail();
+    }
 }
