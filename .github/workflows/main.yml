@@ -24,7 +24,9 @@ jobs:
         distribution: 'adopt'
 
     - name: Build with Gradle
-      run: ./gradlew build
+      run: |
+        mkdir %HOMEDRIVE%%HOMEPATH%\.gradle
+        gradlew.bat build
 
     - name: Run tests
       run: |
