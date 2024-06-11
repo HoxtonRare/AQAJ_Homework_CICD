@@ -29,7 +29,6 @@ jobs:
     - name: Run tests
       run: |
         ./gradlew test || exit 1
-
     - name: Generate coverage report
       run: ./gradlew jacocoTestReport
 
