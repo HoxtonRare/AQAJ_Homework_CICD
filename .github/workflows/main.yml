@@ -26,7 +26,7 @@ jobs:
     - name: Build with Gradle
       run: |
         mkdir %HOMEDRIVE%%HOMEPATH%\.gradle
-        ./gradlew.bat build
+        ./gradlew build
 
     - name: Run tests
       run: |
