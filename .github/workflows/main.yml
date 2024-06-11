@@ -27,7 +27,7 @@ jobs:
       run: |
         mkdir %HOMEDRIVE%%HOMEPATH%\.gradle
         ./gradlew build test 
-        if ERRORLEVEL 1 (exit 1)
+        if (ERRORLEVEL 1) exit 1
     
     - name: Generate coverage report
       run: ./gradlew jacocoTestReport
