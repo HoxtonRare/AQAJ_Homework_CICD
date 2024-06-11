@@ -10,4 +10,8 @@ public class BoundaryService {
         }
         return currentMin;
     }
+
+    public void someMethod(){
+        //some code
+    }
 }
