@@ -28,7 +28,8 @@ class BoundaryServiceTest {
         assertEquals(exp, boundaryService.findMin(marks));
     }
 
+    @Test
     void failedTest(){
-        fail("Вызов ошибки");
+        fail();
     }
 }
