@@ -26,11 +26,8 @@ jobs:
     - name: Build with Gradle
       run: |
         mkdir %HOMEDRIVE%%HOMEPATH%\.gradle
-        ./gradlew.bat build
+        ./gradlew build test || exit 1
 
-    - name: Run tests
-      run: |
-        ./gradlew test || exit 1
     - name: Generate coverage report
       run: ./gradlew jacocoTestReport
 
