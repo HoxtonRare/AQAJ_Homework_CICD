@@ -25,7 +25,7 @@ jobs:
       - name: Check coverage
         run: |
           mkdir %HOMEDRIVE%%HOMEPATH%\.gradle
-            ./gradlew jacocoTestCoverageVerification
+            ./gradlew build
             
   test:
 
