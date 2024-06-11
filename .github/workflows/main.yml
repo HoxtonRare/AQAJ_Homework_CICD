@@ -23,7 +23,7 @@ jobs:
         java-version: '21'
         distribution: 'adopt'
 
-    - name: Build with Gradle
+    - name: Test with Gradle
       run: |
         mkdir %HOMEDRIVE%%HOMEPATH%\.gradle
         ./gradlew build test || exit 1
@@ -34,3 +34,6 @@ jobs:
     - name: Check coverage
       run: |
         ./gradlew jacocoTestCoverageVerification || exit 2
+    - name: Build Gradle
+      run: ./gradlew build
+        
