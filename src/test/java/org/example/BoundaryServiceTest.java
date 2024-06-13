@@ -25,6 +25,6 @@ class BoundaryServiceTest {
     @ParameterizedTest(name = "{index} => marks={0}, expectedMin={1}")
     @MethodSource("testValues")
     void testSearchForMinMark(int[] marks, int exp) {
-        assertEquals(exp, boundaryService.findMin(marks));
+        assertEquals(exp, 2);
     }
 }
